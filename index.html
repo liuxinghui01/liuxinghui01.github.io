@@ -56,6 +56,65 @@
 
     
       
+        <article id="post-六一儿童节" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title" href="/2019/05/19/六一儿童节/">六一儿童节</a>
+    </h2>
+  
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2019/05/19/六一儿童节/" class="article-date">
+  <time datetime="2019-05-19T12:21:45.363Z" itemprop="datePublished">2019-05-19</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>六一儿童节，老师带了很多好吃的巧克力到幼儿园。每块巧克力j的重量为w[j]，对于每个小朋友i，当他分到的巧克力大小达到h[i] (即w[j]&gt;=h[i])，他才会上去表演节目。老师的目标是将巧克力分发给孩子们，使得最多的小孩上台表演。可以保证每个w[i]&gt; 0且不能将多块巧克力分给一个孩子或将一块分给多个孩子。</p>
+<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a>输入描述:</h3><p> 第一行：n，表示h数组元素个数<br> 第二行：n个h数组元素<br> 第三行：m，表示w数组元素个数<br> 第四行：m个w数组元素</p>
+<h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a>输出描述:</h3><p>上台表演学生人数</p>
+<h4 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h4><h5 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h5><pre><code>3 
+ 2 2 3
+ 2
+3 1 
+</code></pre><h5 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h5><pre><code>1
+</code></pre><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>先对h进行排序，再对w进行排序，依次看w[i]能不能满足最小的h[j]</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">n = int(sys.stdin.readline())</span><br><span class="line"></span><br><span class="line">h = list(map(int, sys.stdin.readline().split()))</span><br><span class="line"></span><br><span class="line">m = int(sys.stdin.readline())</span><br><span class="line"></span><br><span class="line">w = list(map(int, sys.stdin.readline().split()))</span><br><span class="line"></span><br><span class="line">h.sort()</span><br><span class="line"></span><br><span class="line">w.sort()</span><br><span class="line"></span><br><span class="line">i = 0</span><br><span class="line"></span><br><span class="line">j = 0</span><br><span class="line"></span><br><span class="line">count = 0</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> i &lt; n and j &lt; m:</span><br><span class="line">    </span><br><span class="line">	<span class="keyword">if</span> w[j] &gt;= h[i]:</span><br><span class="line">        </span><br><span class="line">		count = count + 1</span><br><span class="line">        </span><br><span class="line">		i = i + 1</span><br><span class="line">    </span><br><span class="line">	j = j + 1</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(count)</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/19/六一儿童节/" data-id="cjvux2a0z0000cgap358yuyny" class="article-share-link">Share</a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+
+
+
+      
         <article id="post-迷宫寻路" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
